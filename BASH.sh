@@ -106,7 +106,7 @@ EOF
 cd ..
 
 # Create the rst files
-sphinx-apidoc -o source/ ../ --force 
+sphinx-apidoc -o source/ ../ --force
 
 
 cat <<EOF > source/index.rst
@@ -114,7 +114,6 @@ cat <<EOF > source/index.rst
    sphinx-quickstart on Sat Feb  1 20:08:52 2025.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
-
 
 
 
@@ -126,10 +125,10 @@ cat <<EOF > source/index.rst
 EOF
 
 # Build documentation in multiple formats
-make html 
+
 #make latex
 make latexpdf
 
 echo "Documentation successfully generated!"
-#open build/html/index.html
-#open build/latex/simulationofmwavisibilities.pdf
+
+open build/latex/simulationofmwavisibilities.pdf
