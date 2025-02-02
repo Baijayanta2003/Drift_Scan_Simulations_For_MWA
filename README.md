@@ -1,6 +1,6 @@
 ## Drift Scan Simulations For MWA
 
-In the following sections i will try to give an overview how to simulate drift scan data for the MWA Telescope.
+How to simulate drift scan data for the MWA Telescope.
 
 ## Setting Up A Virtual environment
 
