@@ -132,7 +132,7 @@ You can save the visibility in a binary file named `Vis_Sim_{Amp}_{bln.shape[0]}
 
 If you have provided a `fits` file depending on the fits file you can write the following styles to save it in different ways.
 
-- If your file has multiple frequency channels and you just want to put the different realizations data in there write or uncomment the following part in the file `Vis_calculate.py`.(line no 182)
+- If your file has multiple frequency channels and you just want to put the different realizations data in there write or uncomment the following part in the file `Vis_calculate.py`.(line no 188)
 
 ```python
 
@@ -150,7 +150,7 @@ hdulist.writeto(op_filename,overwrite = True) # note that the files will be over
 
 hdulist.close()
 ```
-- If you want to put the same visibility across all the frequency channels and make different fits file for different realizations do this.(line no 168)
+- If you want to put the same visibility across all the frequency channels and make different fits file for different realizations do this.(line no 174)
 ```python
 #data output for multi channel multiple realization different file
 Freq_chan=dataT['DATA'].shape[4] #no of frequency channels
