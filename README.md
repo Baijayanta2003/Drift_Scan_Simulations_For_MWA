@@ -34,3 +34,93 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
   2  AIPS AN       1 BinTableHDU     62   128R x 13C   [8A, 3D, 0D, 1J, 1J, 1E, 1A, 1E, 1E, 1A, 1E, 1E, 1E]   
   3  AIPS SU       1 BinTableHDU     69   1R x 19C   [1J, 20A, 1J, 4A, 1E, 1E, 1E, 1E, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D]   
 ```
+The header is given as:
+```bash
+SIMPLE  =                    T /Standard FITS format                            
+BITPIX  =                  -32 /Floating point values                           
+NAXIS   =                    7                                                  
+NAXIS1  =                    0 /Random groups, NOT image                        
+NAXIS2  =                    3                                                  
+NAXIS3  =                    4                                                  
+NAXIS4  =                    1                                                  
+NAXIS5  =                    1                                                  
+NAXIS6  =                    1                                                  
+NAXIS7  =                    1                                                  
+EXTEND  =                    T /Tables may follow                               
+BLOCKED =                    T /File may be blocked                             
+GROUPS  =                    T /Random Group UV data                            
+PCOUNT  =                    9 /Number of random parameters                     
+GCOUNT  =                86625 /Number of groups (rows) in the file             
+                                                                                
+EPOCH   =   2.000000000000E+03                                                  
+BSCALE  =   1.000000000000E+00                                                  
+BZERO   =   0.000000000000E+00                                                  
+BUNIT   = 'UNCALIB '                                                            
+CTYPE2  = 'COMPLEX '                                                            
+CRVAL2  =   1.000000000000E+00                                                  
+CDELT2  =   1.000000000000E+00                                                  
+CRPIX2  =   1.000000000000E+00                                                  
+CROTA2  =   0.000000000000E+00                                                  
+CTYPE3  = 'STOKES  '                                                            
+CRVAL3  =  -5.000000000000E+00                                                  
+CDELT3  =  -1.000000000000E+00                                                  
+CRPIX3  =   1.000000000000E+00                                                  
+CROTA3  =   0.000000000000E+00                                                  
+CTYPE4  = 'FREQ    '                                                            
+CRVAL4  =   1.542750000000E+08                                                  
+CDELT4  =   7.200000000000E+05                                                  
+CRPIX4  =   1.000000000000E+00                                                  
+CROTA4  =   0.000000000000E+00                                                  
+CTYPE5  = 'IF      '                                                            
+CRVAL5  =   1.000000000000E+00                                                  
+CDELT5  =   1.000000000000E+00                                                  
+CRPIX5  =   1.000000000000E+00                                                  
+CROTA5  =   0.000000000000E+00                                                  
+CTYPE6  = 'RA      '                                                            
+CRVAL6  =   0.000000000000E+00                                                  
+CDELT6  =   1.000000000000E+00                                                  
+CRPIX6  =   1.000000000000E+00                                                  
+CROTA6  =   0.000000000000E+00                                                  
+CTYPE7  = 'DEC     '                                                            
+CRVAL7  =   0.000000000000E+00                                                  
+CDELT7  =   1.000000000000E+00                                                  
+CRPIX7  =   1.000000000000E+00                                                  
+CROTA7  =   0.000000000000E+00                                                  
+PTYPE1  = 'UU      '                                                            
+PSCAL1  =   1.000000000000E+00                                                  
+PZERO1  =   0.000000000000E+00                                                  
+PTYPE2  = 'VV      '                                                            
+PSCAL2  =   1.000000000000E+00                                                  
+PZERO2  =   0.000000000000E+00                                                  
+PTYPE3  = 'WW      '                                                            
+PSCAL3  =   1.000000000000E+00                                                  
+PZERO3  =   0.000000000000E+00                                                  
+PTYPE4  = 'DATE    '           /Day number                                      
+PSCAL4  =   1.000000000000E+00                                                  
+PZERO4  =   0.000000000000E+00                                                  
+PTYPE5  = 'DATE    '           /Day fraction                                    
+PSCAL5  =   1.000000000000E+00                                                  
+PZERO5  =   0.000000000000E+00                                                  
+PTYPE6  = 'BASELINE'                                                            
+PSCAL6  =   1.000000000000E+00                                                  
+PZERO6  =   0.000000000000E+00                                                  
+PTYPE7  = 'FREQSEL '                                                            
+PSCAL7  =   1.000000000000E+00                                                  
+PZERO7  =   0.000000000000E+00                                                  
+PTYPE8  = 'SOURCE  '                                                            
+PSCAL8  =   1.000000000000E+00                                                  
+PZERO8  =   0.000000000000E+00                                                  
+PTYPE9  = 'INTTIM  '                                                            
+PSCAL9  =   1.000000000000E+00                                                  
+PZERO9  =   0.000000000000E+00                                                  
+OBJECT  = 'MULTI   '                                                            
+DATE-OBS= '2016-10-12T12:00:00.000000'                                          
+TELESCOP= 'MWA     '                                                            
+INSTRUME= 'MWA     '                                                            
+OBSERVER= '        '                                                            
+SORTORD = 'TB      '                                                            
+SPECSYS = 'TOPOCENT'                                                            
+HISTORY AIPS WTSCAL = 1.0                                                       
+                                                                                
+ORIGIN  = 'casacore '
+```
