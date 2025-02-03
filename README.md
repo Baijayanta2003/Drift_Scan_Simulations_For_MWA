@@ -25,7 +25,7 @@ This will generate a output fits file in a directory named  `simulated_visibilit
 
 The structure of the fits file (`1000003720-unSub.fits`)I have used is given as follows:
 
-```bash
+```python
 
 Filename: 1000003720-unSub.fits
 No.    Name      Ver    Type      Cards   Dimensions   Format
@@ -35,7 +35,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
   3  AIPS SU       1 BinTableHDU     69   1R x 19C   [1J, 20A, 1J, 4A, 1E, 1E, 1E, 1E, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D, 1D]   
 ```
 The header is given as:
-```bash
+```python
 SIMPLE  =                    T /Standard FITS format                            
 BITPIX  =                  -32 /Floating point values                           
 NAXIS   =                    7                                                  
