@@ -127,3 +127,44 @@ ORIGIN  = 'casacore '
 For more details Please read the `documentation` carefully.
 
 ## Important Note:
+
+You can save the visibility in a binary file named `Vis_Sim_{Amp}_{bln.shape[0]}.npy` format.
+
+If you have provided a `fits` file depending on the fits file you can write the following styles to save it in different ways.
+
+- If your file has multiple frequency channels and you just want to put the different realizations data in there write or uncomment the following part in the file `Vis_calculate.py`.(line no 182)
+
+```python
+
+#data output for multiple realization in same file along the frequency channels
+# for j in range(pol):
+#     hdulist[0].data['DATA'][:,0,0,0,:Nrea,j, 0] = vis.T.real.astype(np.float64)
+#     hdulist[0].data['DATA'][:,0,0,0,:Nrea,j, 1] = vis.T.imag.astype(np.float64)
+
+# if uaps:
+#     op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_UAPS_{i+1}.fits"
+# else:
+#     op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_APS_{Amp}_beta{beta}_{i+1}.fits"
+
+# hdulist.writeto(op_filename,overwrite = True) # note that the files will be overwritten
+
+
+hdulist.close()
+```
+- If you want to put the same visibility across all the frequency channels and make different fits file for different realizations do this.(line no 168)
+```python
+#data output for multi channel multiple realization different file
+Freq_chan=dataT['DATA'].shape[4] #no of frequency channels
+ for i in range(Nrea):
+     for k in range(pol):
+         hdulist[0].data["DATA"][:, 0, 0, 0,:, k, 0] =np.tile(vis[i].T.real.astype(np.float64)[:,np.newaxis],Freq_chan) 
+         hdulist[0].data["DATA"][:, 0, 0, 0,:, k, 1] =np.tile(vis[i].T.imag.astype(np.float64)[:,np.newaxis],Freq_chan)
+         if uaps:
+             op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_UAPS_{i+1}.fits"
+         else:
+             op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_APS_{Amp}_beta{beta}_{i+1}.fits"
+         hdulist.writeto(op_filename, overwrite=True)
+```
+In my case the fits file has only one frequency channel. 
+
+
