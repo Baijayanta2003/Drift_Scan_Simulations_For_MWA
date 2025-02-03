@@ -128,7 +128,7 @@ For more details Please read the `documentation` carefully.
 
 ## Important Note:
 
-The Parameter `chunk_size` is dependent *on the number of cores and Ram of your system.I find out that for 32 core CPU it is best 300 and for my 10 core system it was 90.Adjust it as per your system.*
+The Parameter `chunk_size` is dependent `on the number of cores and Ram of your system.I find out that for 32 core CPU it is best 300 and for my 10 core system it was 90.Adjust it as per your system.`
 
 You can save the visibility in a binary file named `Vis_Sim_{Amp}_{bln.shape[0]}.npy` format.
 
