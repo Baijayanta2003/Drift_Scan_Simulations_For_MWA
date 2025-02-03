@@ -129,10 +129,10 @@ print(map_grf.shape)
 # data_tmp = hdulist[0].data 				#to save visibilities in data
 # dataT = Table(data_tmp)                 #to convert data from array form to table form, readable
 
-# nu_c = hdulist[0].header['CRVAL4']*1.e-6
-# pol = hdulist[0].header['NAXIS3']
-# Nchan = hdulist[0].header['NAXIS4']
-# dnu_c = hdulist[0].header['CDELT4']*1.e-6
+#nu_c = hdulist[0].header['CRVAL4']*1.e-6   #Centered Frequency in MHz unit 1e-6 to convert from Hz to MHz
+#pol = hdulist[0].header['NAXIS3']          #No of Polarization Channels Stokes I,U,V,W
+#Nchan = hdulist[0].header['NAXIS4']        #No of Frequnecy Channels
+#dnu_c = hdulist[0].header['CDELT4']*1.e-6  #Frequency Resolution in MHz unit 1e-6 to convert from Hz to MHz
 
 # #EXTRACT the baselines
 # u = dataT['UU']*3.e8 #*nu_c for baseline unit   #*3.e8 (for meter unit)
