@@ -173,6 +173,8 @@ To execute :
 chmod +x Sphinx_Documentation_Bash.sh
 ./Sphinx_Documentation_Bash.sh
 ```
-For more visit https://github.com/Baijayanta2003/Python-Documentation-With-Sphinx?tab=readme-ov-file#here-is-a-bash-script-which-will-help-you-to-do-this-all-togetheri-prefer-this-one
+For more visit 
+- https://github.com/Baijayanta2003/Python-Documentation-With-Sphinx?tab=readme-ov-file#python-documentation-with-sphinx
+- https://github.com/Baijayanta2003/Python-Documentation-With-Sphinx?tab=readme-ov-file#here-is-a-bash-script-which-will-help-you-to-do-this-all-togetheri-prefer-this-one
 
 
