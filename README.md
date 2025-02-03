@@ -124,6 +124,6 @@ HISTORY AIPS WTSCAL = 1.0
                                                                                 
 ORIGIN  = 'casacore '
 ```
-For more details Please read the documentation carefully.
+For more details Please read the `documentation` carefully.
 
 ## Important Note:
