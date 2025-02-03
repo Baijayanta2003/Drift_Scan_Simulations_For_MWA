@@ -1,10 +1,10 @@
 ## Drift Scan Simulations For MWA
 
-How to simulate drift scan data for the MWA Telescope.
+How to Simulate Drift scan data for the MWA Telescope.
 
 ## Setting Up A Virtual environment
 
-Activate the Virtual Environment.Go there for more https://github.com/Baijayanta2003/Python-Documentation-With-Sphinx#here-are-the-steps .
+Activate the Virtual Environment.Go there for more details : https://github.com/Baijayanta2003/Python-Documentation-With-Sphinx#here-are-the-steps .
 
 **Once activated Install the required packages**.
 
@@ -124,3 +124,6 @@ HISTORY AIPS WTSCAL = 1.0
                                                                                 
 ORIGIN  = 'casacore '
 ```
+For more details Please read the documentation carefully.
+
+## Important Note:
