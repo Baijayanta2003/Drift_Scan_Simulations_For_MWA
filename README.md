@@ -136,17 +136,16 @@ If you have provided a `fits` file depending on the fits file you can write the 
 
 ```python
 
-#data output for multiple realization in same file along the frequency channels
-# for j in range(pol):
-#     hdulist[0].data['DATA'][:,0,0,0,:Nrea,j, 0] = vis.T.real.astype(np.float64)
-#     hdulist[0].data['DATA'][:,0,0,0,:Nrea,j, 1] = vis.T.imag.astype(np.float64)
+for j in range(pol):
+    hdulist[0].data['DATA'][:,0,0,0,:Nrea,j, 0] = vis.T.real.astype(np.float64)
+    hdulist[0].data['DATA'][:,0,0,0,:Nrea,j, 1] = vis.T.imag.astype(np.float64)
 
-# if uaps:
-#     op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_UAPS_{i+1}.fits"
-# else:
-#     op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_APS_{Amp}_beta{beta}_{i+1}.fits"
+if uaps:
+    op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_UAPS_{i+1}.fits"
+else:
+    op_filename = f"{output_dir}/Nside_{nside}_RA_{ra_ptg}_APS_{Amp}_beta{beta}_{i+1}.fits"
 
-# hdulist.writeto(op_filename,overwrite = True) # note that the files will be overwritten
+hdulist.writeto(op_filename,overwrite = True) # note that the files will be overwritten
 
 
 hdulist.close()
