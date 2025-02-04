@@ -11,7 +11,7 @@ Activate the Virtual Environment.Go there for more details : https://github.com/
 ## Required Packages
 
 ```bash
-pip install numpy healpy matplotlib astropy 
+pip install numpy healpy matplotlib astropy numexpr
 
 ```
 
